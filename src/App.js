@@ -199,11 +199,33 @@ class App extends React.Component {
 
   render(){
     return (
-      <div className="App" >
+      <div className="App" style={{marginTop: '10%'}} >
         {/* <QRCode  bgColor="#cccccc" level="M" value="ef537f25c895bfa782526529a9b63d97aa631564d5d789c2b765448c8635fb6c" /> */}
-        <input type="text" onChange={this.setInputHandler} value={this.state.inputValue}/>
-        <p>{this.state.error ? '0 < Input < 1 Lakh' : ''}</p>
-        <p>{this.state.stringValue}</p>
+        <input style={{
+          textAlign: 'center',
+          border: '3px solid #505f9f',
+          padding: '5px',
+          borderRadius: '10px',
+          textIndent: '6px',
+          color: '#515151',
+          boxShadow: '0px 6px 6px #0d0d0d47',
+          outline: 'none',
+          fontSize: '14px',
+          fontWeight: '600',
+          letterSpacing: '1px',
+        }} type="text" onChange={this.setInputHandler} value={this.state.inputValue}/>
+        <p style={{
+          color: '#e95555',
+          fontSize: '13px',
+          fontFamily: 'monospace',
+          fontWeight: '800',
+        }}>{this.state.error ? '0 < Input < 1 Lakh' : ''}</p>
+        <p style={{
+              fontFamily: 'monospace',
+              fontSize: '20px',
+              color: '#7a97e7',
+              fontWeight: '600',
+        }}>{this.state.stringValue}</p>
   
       </div>
     );
