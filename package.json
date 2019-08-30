@@ -2,7 +2,7 @@
   "name": "qrcode",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://niladrimahato96.github.io/number_to_string",
+  "homepage": "http://niladrimahato96.github.io/number-to-string",
   "dependencies": {
     "qrcode.react": "^0.9.3",
     "react": "^16.8.6",
